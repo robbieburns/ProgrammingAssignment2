@@ -1,11 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do 
 ## Functions to create a matrix that can cache it's inverse 
 ## (makeCacheMatrix), and a function that can return the inverse 
 ## of a matrix (solve), using the cached copy of the inverse if it 
 ## exists (cacheSolve).
 
-## Construct a list object that can return the matrix that was 
+## makeCacheMatrix: Construct a list object that can return the matrix that was 
 ## initially supplied, and can cache a copy of the inverse (which
 ## can also be returned as neede)
 makeCacheMatrix <- function(x = matrix()) {
@@ -29,10 +27,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Caching version of "solve", uses the inverse-caching
+## cacheSolve: Caching version of "solve", uses the inverse-caching
 ## list object supplied by makeCacheMatrix so that the
 ## inverse only needs to be calculated once
-
+##
 ## Additional arguments to "solve" can be provided to this 
 ## function by way of (...)
 
